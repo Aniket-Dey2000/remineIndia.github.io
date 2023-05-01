@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Save The World</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="#" class="logo">Remine India Private Limited</a>
+        <div class="toggle"></div>
+      </header>
+      <img src="images/bg.jpg" class="bg" />
+      <img src="images/bird.png" class="bird" />
+      <div class="content">
+        <h2>We can save The<br /><span>Earth</span></h2>
+        <p>
+          Remine India is a recognized startup working on recycling e-Waste and
+          Li Batteries.
+        </p>
+        <a href="#">Join Us</a>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="images/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/instagram.png" /></a>
+        </li>
+      </ul>
+      <div class="textBlocks">
+        <div class="block">
+          <h3>Defenders of Earth</h3>
+          <p>
+            Remine India is a distinguished startup that focuses on recycling
+            electronic waste and lithium batteries, which are some of the most
+            hazardous materials that pose a significant environmental threat if
+            not disposed of properly. With a strong commitment to sustainability
+            and environmental protection, Remine India has developed innovative
+            solutions that enable them to safely extract valuable materials from
+            e-waste and batteries, thereby reducing their impact on the
+            environment.
+          </p>
+        </div>
+        <div class="block">
+          <h3>Save The Enviroment</h3>
+          <p>
+            Remine India has not only contributed to the preservation of the
+            environment but has also promoted the growth of a circular economy
+            by creating a sustainable supply chain for the recovery of valuable
+            resources from waste. Their work has been recognized by various
+            industry bodies, and they continue to set a benchmark for
+            responsible e-waste management practices in the country.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      document.addEventListener("mousemove", function (e) {
+        const bg = document.querySelector(".bg");
+        const bird = document.querySelector(".bird");
+        const content = document.querySelector(".content");
+
+        bg.style.width = 100 + e.pageX / 100 + "%";
+        bg.style.height = 100 + e.pageX / 100 + "%";
+
+        bird.style.right = 100 + e.pageX / 2 + "px";
+
+        content.style.left = 100 + e.pageX / 2.5 + "px";
+      });
+    </script>
+  </body>
+</html>
